@@ -1,0 +1,412 @@
+body { 
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #007bff;
+    padding-top: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    text-align: center;
+    padding: 12px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+/* ✅ Home Page Styling */
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.text-content {
+    width: 55%;
+}
+
+.text-content h2 {
+    font-size: 28px;
+    color: #007bff;
+    animation: slideIn 1s ease-in-out;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: #333;
+}
+
+.text-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.text-content ul li {
+    font-size: 16px;
+    margin: 10px 0;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* 📸 Image Styling */
+.image-content {
+    width: 40%;
+}
+
+.image-content img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-content img:hover {
+    transform: scale(1.05);
+}
+
+/* Call to Action Button */
+.cta-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Quiz & Game Section */
+.question, #game-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.option-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px; /* Add spacing between choices */
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #cce5ff;
+    color: #003366;
+    transition: 0.3s ease-in-out;
+    text-align: left;
+}
+/* Flashcard Page Layout */
+.flashcards-container {
+    margin-left: 250px;
+    padding: 20px;
+    max-width: 800px;
+}
+
+/* Flashcard Section */
+.flashcard-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Flashcard Input Form */
+.flashcard-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #004080;
+    border-radius: 5px;
+}
+
+.flashcard-form button {
+    background-color: #004080;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.flashcard-form button:hover {
+    background-color: #003366;
+}
+
+/* Flashcards */
+.flashcard {
+    background-color: #cce7ff;
+    border: 2px solid #004080;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #004080;
+    transition: 0.3s;
+}
+
+.flashcard:hover {
+    transform: scale(1.05);
+}
+
+/* Show Answer Button */
+.flashcard button {
+    background-color: #004080;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.flashcard button:hover {
+    background-color: #003366;
+}
+
+/* Delete Button */
+.delete-btn {
+    background-color: red !important;
+    margin-top: 5px;
+}
+
+.delete-btn:hover {
+    background-color: darkred !important;
+}
+/* Navigation Bar */
+.navbar {
+    width: 220px;
+    position: fixed;
+    height: 100%;
+    background-color: #004080;
+    padding-top: 20px;
+}
+
+.navbar h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 20px;
+    transition: 0.3s;
+    margin-bottom: 10px; /* Adds spacing between menu items */
+}
+
+.navbar a:hover {
+    background-color: #003366;
+}
+.navbar ul,
+.navbar li {
+    list-style: none; /* Ensures no bullets */
+    margin: 0;
+    padding: 0;
+}
+.navbar ul {
+    padding-left: 10px; /* Adds some space from the left edge */
+}
+
+.navbar ul li {
+    text-align: left; /* Aligns text to the left */
+    padding-left: 15px; /* Adjusts spacing for better alignment */
+}
+/* Game Container */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+#word-circle {
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#letters-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.letter {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.selected-word {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.selected-word button {
+    margin-left: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.game-controls {
+    margin-top: 20px;
+}
+
+#score {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.leaderboard {
+    position: absolute;
+    top: 50px;
+    right: -300px; /* Moves leaderboard to the right */
+    width: 250px;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    text-align: left;
+}
+
+.leaderboard h3 {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.leaderboard ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.leaderboard li {
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+}

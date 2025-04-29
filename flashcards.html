@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards - Study Quest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Left Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quiz.html">Quiz Challenge</a></li>
+            <li><a href="game.html">Game Challenge</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+    <!-- Flashcards Section -->
+    <div class="flashcards-container">
+        <div class="flashcard-info">
+            <h2>Flashcards</h2>
+            <p>Flashcards are a powerful learning tool that helps with memorization and quick recall of information.
+                They are especially useful for studying vocabulary, key concepts, and important facts.</p>
+        </div>
+
+        <!-- Flashcard Input Form -->
+        <div class="flashcard-section">
+            <h3>Create a Flashcard</h3>
+            <div class="flashcard-form">
+                <input type="text" id="flashcard-question" placeholder="Enter your question">
+                <input type="text" id="flashcard-answer" placeholder="Enter the answer">
+                <button onclick="addFlashcard()">Add Flashcard</button>
+            </div>
+
+            <h3>Your Flashcards</h3>
+            <div id="flashcard-list">
+                <p>No flashcards added yet.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="flashcards.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

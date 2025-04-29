@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Puzzle Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quiz.html">Quiz Challenge</a></li>
+            <li><a href="flashcards.html">Flashcards</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="game-container">
+        <h2>Word Puzzle Game</h2>
+
+        <!-- Player Name Input -->
+        <div class="player-input">
+            <label for="playerName">Enter Your Name:</label>
+            <input type="text" id="playerName" placeholder="Your Name">
+            <button onclick="startGame()">Start</button>
+        </div>
+
+        <!-- Word Circle -->
+        <div id="word-circle">
+            <div id="letters-container"></div>
+        </div>
+
+        <!-- Selected Word Display -->
+        <div class="selected-word">
+            <p id="selectedWord"></p>
+            <button onclick="clearSelection()">X</button>
+        </div>
+
+        <!-- Feedback Message -->
+        <p id="feedbackMessage"></p>
+
+        <!-- Game Controls -->
+        <div class="game-controls">
+            <button onclick="submitWord()">Submit</button>
+            <button onclick="getHint()">Hint</button>
+        </div>
+
+        <!-- Score Display -->
+        <p id="score">Score: 0</p>
+
+        <!-- Leaderboard -->
+        <div class="leaderboard">
+            <h3>Leaderboard</h3>
+            <ul id="leaderboard-list"></ul>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
