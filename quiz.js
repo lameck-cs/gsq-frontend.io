@@ -29,7 +29,7 @@ async function fetchQuiz() {
     }
 
     try {
-        const response = await fetch(`http://localhost:3000/quiz?topic=${encodeURIComponent(topic)}`);
+        const response = await fetch(`http://gsq-backend-io.onrender.com/quiz?topic=${encodeURIComponent(topic)}`);
         const data = await response.json();
 
         if (!Array.isArray(data) || data.length === 0) {
